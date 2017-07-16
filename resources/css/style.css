@@ -14,3 +14,18 @@ html
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+.row
+{
+    max-width: 1140px;
+    /*
+    we went center this row so 
+    for do this the margin right and left be auto and the 
+    top and bottom be 0
+    margin: top right bottom left 
+    simpler way to do this 
+    margin: 0 auto  top and bottom be 0 
+    and left and right be auto
+    */
+    margin: 0 auto;
+}
