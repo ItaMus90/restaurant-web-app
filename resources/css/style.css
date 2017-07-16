@@ -11,7 +11,7 @@ html
     color: #e2d4d4;
     font-family: 'Lato' , sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
 }
 
@@ -41,13 +41,27 @@ header
 
 h1
 {
+    margin-top: 0;
+    margin-bottom: 20px;
     /*
     Because the normalize.css file 
     we have problam with text so
     we need change the margin of h1 
     to 0
     */
-    margin: 0;
+    color: #e2d4d4;
+    /*
+    The site need to be responsive 
+    web desing, so we need everything be relative
+    so  the font size be 200% that mean
+    from 20px font size in html 
+    18 * 240 = 4320
+    */
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 .hero-text-box 
@@ -57,4 +71,64 @@ h1
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited
+{
+    /*
+    Because a is element inline 
+    we went change this for inline block
+    */
+    display: inline-block;
+    /*
+    padding: 10px 30px is shorcut
+    to 10px top and botton 
+    30px right and left
+    */
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited
+{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+/*
+What happen when the mouse hover 
+on button or active
+*/
+.btn:hover,
+.btn:active
+{
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active
+{
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active
+{
+    border: 1px solid #cf6d17;
+    color: #fff;
 }
