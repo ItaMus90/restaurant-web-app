@@ -8,7 +8,7 @@
 html
 {
     background-color: #ffffff;
-    color: #555;
+    color: #e2d4d4;
     font-family: 'Lato' , sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -28,4 +28,33 @@ html
     and left and right be auto
     */
     margin: 0 auto;
+}
+
+header 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(img/hero.jpeg);
+    /*vh mean viewport of page in %*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1
+{
+    /*
+    Because the normalize.css file 
+    we have problam with text so
+    we need change the margin of h1 
+    to 0
+    */
+    margin: 0;
+}
+
+.hero-text-box 
+{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
