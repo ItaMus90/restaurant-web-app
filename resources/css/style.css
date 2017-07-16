@@ -1,3 +1,11 @@
+/*
+    Oragne color: #e67e22
+*/
+
+/*------------------------------*/
+/*Basic Setup*/
+/*------------------------------*/
+
 *
 {
     margin: 0;
@@ -15,6 +23,11 @@ html
     text-rendering: optimizeLegibility;
 }
 
+
+/*------------------------------*/
+/*Reuseable Components*/
+/*------------------------------*/
+
 .row
 {
     max-width: 1140px;
@@ -30,14 +43,7 @@ html
     margin: 0 auto;
 }
 
-header 
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(img/hero.jpeg);
-    /*vh mean viewport of page in %*/
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
+/*------- Headings -------*/
 
 h1
 {
@@ -64,14 +70,7 @@ h1
     word-spacing: 4px;
 }
 
-.hero-text-box 
-{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/*------- Buttons -------*/
 
 .btn:link,
 .btn:visited
@@ -131,4 +130,87 @@ on button or active
 {
     border: 1px solid #cf6d17;
     color: #fff;
+}
+
+
+/*------------------------------*/
+/*Header*/
+/*------------------------------*/
+
+header 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(img/hero.jpeg);
+    /*vh mean viewport of page in %*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box 
+{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo 
+{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav
+{
+    float: right;
+    /*
+    To rid the bullet print
+    so the list style be none
+    */
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li 
+{
+    /*
+    They are block element
+    lest change them to inline block
+    */
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    padding: 8px 0;
+    color: #fff;
+    /*
+    To rid the underline
+    the text-decoration: none
+    */
+    text-decoration: none;
+    text-transform: uppercase;
+    /*
+    18px / 20px = 0.9 = 90%
+    */
+    font-size: 90%;
+    
+    /*
+    To order the borser be exsit 
+    need brfore hover this but not see is 
+    so need use transparent 
+    */
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-bottom: 2px solid #e67e22;
 }
