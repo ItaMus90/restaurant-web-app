@@ -43,7 +43,31 @@ html
     margin: 0 auto;
 }
 
+section
+{
+    /*
+    padding 
+    top and button 80px
+    left and right 0
+    */
+    padding: 80px 0;
+    
+}
+
+.box
+{
+    padding: 1%;
+}
+
 /*------- Headings -------*/
+
+h1,
+h2,
+h3
+{
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
 h1
 {
@@ -64,11 +88,69 @@ h1
     18 * 240 = 4320
     */
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 4px;
+    letter-spacing: 1px;
 }
+
+h2
+{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3
+{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after
+{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    
+    /*
+    importent to do in pseudo class
+    need to specify its content
+    in this case i dont won't
+    any word to see it so put space
+    in there " " 
+    */
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px; 
+}
+/*------- Paragraphs -------*/
+
+.long-copy
+{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.box p
+{
+    font-size: 90%;
+    line-height: 145%;
+}
+/*------- Icons -------*/
+
+.icon-big
+{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
 
 /*------- Buttons -------*/
 
