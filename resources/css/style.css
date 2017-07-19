@@ -297,10 +297,25 @@ header
     border-bottom: 2px solid #e67e22;
 }
 
+/*------------------------------*/
+/*Features*/
+/*------------------------------*/
+
+.section-features .long-copy
+{
+    margin-bottom: 30px;
+}
+
 
 /*------------------------------*/
 /*Meals*/
 /*------------------------------*/
+
+.section-meals 
+{
+    padding: 0;
+}
+
 
 .meals-showcase
 {
@@ -320,10 +335,47 @@ header
 {
     width: 100%;
     margin: 0;
+    /*
+    to fix the overflow from 
+    transform: scale(1.15)
+    use the overflow and set
+    him hidden and that overflow not 
+    visable and we see part of image
+    insiafe the conatiner
+    */
+    overflow: hidden;
+    /*
+    The background-color:#000 
+    becuase the opacity is lighter the
+    image and we went rhe background be more darker
+    */
+    background-color: #000;
 }
 
 .meal-photo img
 {
+    /*
+        opacity mean be more lighter
+        0.7 mean 70%
+    */
+    opacity: 0.7;
     width: 100%;
     height: auto;
+    /*
+    scale mean the image big more 115%
+    */
+    transform: scale(1.15);
+}
+
+
+.meal-photo img:hover
+{
+    opacity: 1;
+    /*
+    scale(1.03) because we 
+    went the image go back 
+    to look likenormal
+    */
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
 }
