@@ -388,10 +388,11 @@ header
     width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 2px #d0d0d0;
+    z-index: 9999;
 }
 
 
-.main-nav
+.sticky .main-nav
 { 
     margin-top: 18px;
 }
